@@ -1,0 +1,17 @@
+group 'openmaya'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'scala'
+
+repositories {
+    mavenCentral()
+}
+
+configurations {
+    provided
+    compile.extendsFrom provided
+}
+
+dependencies {
+    compile "org.apache.spark:spark-core_2.10:1.1.0"
+}
